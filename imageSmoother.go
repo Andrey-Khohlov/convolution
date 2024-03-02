@@ -1,5 +1,3 @@
-// You can edit this code!
-// Click here and start typing.
 package main
 
 import (
@@ -18,6 +16,8 @@ func main() {
 }
 
 func imageSmoother(img [][]int) [][]int {
+	/* Smooth an image by 3x3 window avevrage pool convolution */
+
 	var m, n int = len(img), len(img[0])
 
 	var av = make([][]int, m)
